@@ -1,0 +1,27 @@
+.add-creation{
+  color : rgb(255, 255, 255);
+  background-image: linear-gradient(#020d3d7e,#0000007e) , url('/background_banner-3.jpg');
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.add-creation .bg-purple{
+  background-color: rgba(66, 79, 105, 0.301);
+  backdrop-filter: blur(6px);
+}
+
+.add-creation .upload-btn{
+  background-color: rgba(16, 141, 37, 0.301);
+  backdrop-filter: blur(10px);
+}
+
+.add-creation .upload-btn-2{
+  background: linear-gradient(93.87deg, #095ae68c, #062794c7);
+  backdrop-filter: blur(10px);
+  color: white;
+  transition: all 0.32s ease-in-out !important;
+}
+
+.add-creation .btn:hover{
+  outline: 0.5px solid rgba(255, 255, 255, 0.555);
+}

@@ -1,0 +1,5 @@
+.not-found{
+  background-image: linear-gradient(#020d3d7e,#0000007e) , url('/background_banner-1.jpg');
+  background-size: cover;
+  user-select: none;
+}

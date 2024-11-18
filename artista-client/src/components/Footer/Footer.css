@@ -1,0 +1,29 @@
+.footer{
+  margin: 50px 80px;
+}
+
+.footer .col-md-3 p{
+  font-size: small;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.footer img{
+  width: 110px;
+  margin-top: 50px;
+}
+
+.footer a{
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 200;
+}
+
+
+@media (max-width:800px){
+ 
+  .footer{
+    margin: 50px 30px;
+  }
+  }
