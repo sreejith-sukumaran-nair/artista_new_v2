@@ -6,7 +6,10 @@ var logger = require('morgan');
 var dotenv =  require('dotenv');
 const db = require('./database/db');
 
+
 dotenv.config();
+
+
 
 var authRouter = require('./routes/auth.routes.js');
 var postRouter = require('./routes/post.routes.js');
@@ -21,6 +24,13 @@ app.use(cookieParser());
 /* api routes */ 
 app.use('/api/v1/auth' , authRouter);
 app.use('/api/v1/post' , postRouter);
+
+
+app.use(express.static(path.join(__dirname, "../artista-client/dist")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "artista-client", "dist", "index.html"));
+});
 
 
 app.use((err,req,res,next) => {
